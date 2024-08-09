@@ -1,0 +1,35 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000; 
+}
+
+.navbar-content {
+    display: flex;
+    flex: 1; 
+    justify-content: center; 
+}
+
+.navbar-title {
+    margin: 0; 
+}
+
+.navbar-link {
+    position: absolute; 
+    right: 50px; 
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+
+.navbar-link:hover {
+    text-decoration:solid;
+    color: red;
+}
