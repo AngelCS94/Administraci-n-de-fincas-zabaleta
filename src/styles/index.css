@@ -80,6 +80,11 @@ button:focus-visible {
 
 .post-date {
   text-align: right;
-  font-size: 0.9em;
+  font-size: 1.4em;
   color: #888;
+  margin-top: 6em;
+}
+
+.page-container {
+  width: 1000px;
 }
