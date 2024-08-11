@@ -6,13 +6,13 @@ const Navbar = () => {
       <div className="navbar-content">
         <h1 className="navbar-title">Introducción FullStack</h1>
       </div>
-      <a 
-        href="https://github.com/EduardoHernandezGuzman" 
-        target="_blank" 
-        rel="noopener noreferrer" 
+      <a
+        href="https://github.com/EduardoHernandezGuzman"
+        target="_blank"
+        rel="noopener noreferrer"
         className="navbar-link"
       >
-        Mi Github
+        <img src="/gato.png" alt="GitHub" className="navbar-image" />
       </a>
     </nav>
   );
