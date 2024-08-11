@@ -33,3 +33,9 @@
     text-decoration:solid;
     color: red;
 }
+
+.navbar-image {
+    height: 60px; 
+    margin-left: auto; 
+    margin-top: 20px;
+  }
