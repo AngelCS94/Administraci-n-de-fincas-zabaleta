@@ -13,7 +13,7 @@ const Navbar = () => {
         rel="noopener noreferrer"
         className="navbar-link"
       >
-        <img src="/gato.png" alt="GitHub" className="navbar-image" />
+        <img src="/perfil.png" alt="GitHub" className="navbar-image" />
       </a>
     </nav>
   );
