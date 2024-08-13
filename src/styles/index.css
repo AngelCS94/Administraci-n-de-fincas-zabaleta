@@ -88,3 +88,21 @@ button:focus-visible {
 .page-container {
   width: 1000px;
 }
+
+.gist-link {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.gist-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.gist-link a:hover {
+  text-decoration: underline;
+}
+
+.enlace-image {
+  height: 40px; 
+}
