@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <h1 className="navbar-title">Introducción FullStack</h1>
+        <h1 className="navbar-title">Repaso prework</h1>
         <h3>(SP-79)</h3>
       </div>
       <a
