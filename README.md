@@ -4,7 +4,7 @@ Bienvenido al blog de repaso del prework del grupo **Spain 79** de 4Geeks. Este 
 
 ## Enlace del Proyecto
 
-Puedes acceder al blog en línea en el siguiente enlace: [Blog de Repaso del Prework - Spain 79](https://github.com/EduardoHernandezGuzman)
+Puedes acceder al blog en línea en el siguiente enlace: [Blog de Repaso del Prework - Spain 79](https://blog-prework.vercel.app/)
 
 ## Descripción del Proyecto
 
