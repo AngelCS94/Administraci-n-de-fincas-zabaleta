@@ -4,13 +4,16 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/'; // Solo para pruebas
+
 const BlogPost = ({ gistUrl }) => {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch(gistUrl)
+    fetch(PROXY_URL + gistUrl) // Usa el proxy si es necesario
       .then(response => response.text())
-      .then(data => setContent(data));
+      .then(data => setContent(data))
+      .catch(error => console.error('Error fetching gist:', error)); // Manejo de errores
   }, [gistUrl]);
 
   return (
