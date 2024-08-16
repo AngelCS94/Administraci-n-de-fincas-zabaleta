@@ -1,8 +1,8 @@
 const posts = [
   {
-    url: 'https://gist.githubusercontent.com/EduardoHernandezGuzman/381b9d7e3021b3e555b2f54ab03ff8b7/raw',
-    date: '2024-08-08',
-    gistLink: 'https://gist.github.com/EduardoHernandezGuzman/381b9d7e3021b3e555b2f54ab03ff8b7', 
+    url: 'https://gist.github.com/EduardoHernandezGuzman/1fc134ac320afd371adb03ab07938864/raw',
+    date: '2024-08-16',
+    gistLink: 'https://gist.github.com/EduardoHernandezGuzman/1fc134ac320afd371adb03ab07938864', 
   },
   
 ];
