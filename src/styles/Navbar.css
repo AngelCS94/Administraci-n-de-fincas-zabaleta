@@ -39,3 +39,9 @@
     margin-left: auto; 
     margin-top: 20px;
   }
+
+  @media (max-width: 768px) {
+    .navbar-link {
+        display: none; /
+    }
+}

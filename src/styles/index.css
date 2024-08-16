@@ -31,8 +31,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.2em; 
+  line-height: 1.2;
 }
 
 button {
@@ -54,6 +54,72 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.home {
+  padding: 10px;
+}
+
+.post-wrapper {
+  margin-bottom: 40px;
+}
+
+.post-date {
+  text-align: right;
+  font-size: 1em; 
+  color: #888;
+  margin-top: 2em; 
+}
+
+.page-container {
+  width: 100%;
+}
+
+.gist-link {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.gist-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9em; 
+}
+
+.gist-link a:hover {
+  text-decoration: underline;
+}
+
+.enlace-image {
+  height: 30px; 
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.2em; 
+    line-height: 1.1;
+  }
+
+  .post-date {
+    font-size: 1.4em; 
+    margin-top: 4em; 
+  }
+
+  .home {
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 150px; 
+  }
+
+  .gist-link a {
+    font-size: 1em; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    width: 1000px;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,44 +131,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.home {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 150px;
-}
-
-.post-wrapper {
-  margin-bottom: 40px;
-}
-
-.post-date {
-  text-align: right;
-  font-size: 1.4em;
-  color: #888;
-  margin-top: 6em;
-}
-
-.page-container {
-  width: 1000px;
-}
-
-.gist-link {
-  text-align: right;
-  margin-top: 10px;
-}
-
-.gist-link a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.gist-link a:hover {
-  text-decoration: underline;
-}
-
-.enlace-image {
-  height: 30px; 
 }
