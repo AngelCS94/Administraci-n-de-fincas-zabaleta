@@ -31,9 +31,10 @@ body {
 }
 
 h1 {
-  font-size: 3.2em; 
+  font-size: 2.2em; 
   line-height: 1.2;
 }
+
 
 button {
   border-radius: 8px;
@@ -94,7 +95,7 @@ button:focus-visible {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 3.2em; 
+    font-size: 2.2em; 
     line-height: 1.1;
   }
 

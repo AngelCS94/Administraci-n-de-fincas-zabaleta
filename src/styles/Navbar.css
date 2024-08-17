@@ -22,6 +22,11 @@
     margin: 0; 
 }
 
+.navbar-subtitle {
+    font-size:medium;
+    margin-top: 100px;
+}
+
 .navbar-link {
     position: absolute; 
     right: 50px; 
