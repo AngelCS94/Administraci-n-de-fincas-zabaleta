@@ -12,7 +12,7 @@ const Home = () => {
           {posts.map((post, index) => (
             <div key={index} className="post-wrapper">
               <p className="post-date">{new Date(post.date).toLocaleDateString()}</p>
-              <BlogPost gistUrl={post.url} />
+              <BlogPost fileName={post.fileName} />
               <p className="gist-link">
                 <a href={post.gistLink} target="_blank" rel="noopener noreferrer">
                 <img src="/enlace.png" alt="GitHub" className="enlace-image" />

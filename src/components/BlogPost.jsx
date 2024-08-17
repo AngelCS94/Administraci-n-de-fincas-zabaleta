@@ -4,17 +4,20 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const PROXY_URL = 'https://cors-anywhere.herokuapp.com/'; // Solo para pruebas
-
-const BlogPost = ({ gistUrl }) => {
+const BlogPost = ({ fileName }) => {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch(PROXY_URL + gistUrl) // Usa el proxy si es necesario
-      .then(response => response.text())
+    fetch(`/posts/${fileName}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
       .then(data => setContent(data))
-      .catch(error => console.error('Error fetching gist:', error)); // Manejo de errores
-  }, [gistUrl]);
+      .catch(error => console.error('Error loading markdown file:', error));
+  }, [fileName]);
 
   return (
     <div className="blog-post">
