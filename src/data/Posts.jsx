@@ -1,5 +1,10 @@
 const posts = [
   {
+    fileName: 'post6.md',
+    date: '2024-08-28',
+    gistLink: 'https://gist.github.com/EduardoHernandezGuzman/c1d07a87f57f021a79be74aba2101e81', 
+  },
+  {
     fileName: 'post5.md',
     date: '2024-08-26',
     gistLink: 'https://gist.github.com/EduardoHernandezGuzman/b2e5dfa1d65babfb2b54510358309517', 
