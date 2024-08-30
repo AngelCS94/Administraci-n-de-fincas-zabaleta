@@ -1,4 +1,4 @@
-## Clase 6 del Prework: Repaso y Proyecto Práctico
+# Clase 6 del Prework: Repaso y Proyecto Práctico
 
 Hoy en la clase 6 del prework del grupo SP-79 en 4Geeks Academy, realizamos un proyecto práctico que sirvió como un excelente repaso de HTML, CSS, y JavaScript. Juntos creamos una página web interactiva con varias funcionalidades clave:
 
