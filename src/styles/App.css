@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 1rem;
   text-align: left;
+  font-family: 'Roboto', 'Poppins', Arial, sans-serif;
 
 }
 
@@ -12,4 +13,91 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+/* Home - Post styling */
+.home {
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.post-wrapper {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.post-date {
+  text-align: right;
+  font-size: 0.9em;
+  color: #616161;
+}
+
+.gist-link {
+  text-align: right;
+}
+
+.gist-link a {
+  display: inline-flex;
+  align-items: center;
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.gist-link a:hover {
+  color: #0056b3;
+}
+
+.enlace-image {
+  height: 24px;
+  margin-left: 8px;
+}
+
+/* Botones */
+button {
+  background-color: #1a73e8;
+  border-radius: 8px;
+  padding: 0.8em 1.5em;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.4em;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+
+  .post-wrapper {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    width: 950px;
+  }
+
+  .home {
+    margin-top: 100px;
+  }
+
+  .post-date {
+    font-size: 1em;
+  }
 }
