@@ -4,7 +4,10 @@
   padding: 1rem;
   text-align: left;
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
-
+  
+  /* Asegura que el fondo sea blanco y el texto negro */
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .card {
@@ -14,7 +17,6 @@
 .read-the-docs {
   color: #888;
 }
-
 
 /* Home - Post styling */
 .home {
