@@ -1,0 +1,12 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+.contenedor-page {
+    background-color: #E4E3E3;
+    min-height: 100vh; /* Asegura que cubre toda la pantalla */
+}
+

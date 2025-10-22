@@ -1,0 +1,139 @@
+/* --- HERO --- */
+.header {
+position: relative;
+height: 100vh;
+width: 100%;
+overflow: hidden;
+}
+
+/* La imagen hace de fondo del hero */
+.img-fluid-header {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 0;
+}
+
+/* Centrado fiable también en móvil */
+.titleheader {
+position: absolute;
+top: 45%;
+left: 0;
+right: 0;
+transform: translateY(-50%);
+text-align: center;
+color: white;
+z-index: 1;
+padding-left: max(16px, env(safe-area-inset-left));
+padding-right: max(16px, env(safe-area-inset-right));
+}
+
+.titleheader h1,
+.titleheader h3 {
+margin-left: auto;
+margin-right: auto;
+}
+
+.titleheader button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 1rem;
+background-color: #F2C94C;
+font-weight: 800;
+border: none;
+cursor: pointer;
+border-radius: 8px;
+transition: background-color 0.3s ease;
+}
+
+.titleheader button:hover {
+background-color: #eab308;
+}
+
+/* --- TARJETAS --- */
+.info-card-container {
+position: relative;
+margin-top: -100px; /* solapa con el hero */
+z-index: 2;
+margin-bottom: clamp(24px, 5vw, 64px); /* separa del siguiente bloque */
+}
+
+.info-card {
+background-color: #ffffff;
+border-radius: 12px;
+padding: 1.5rem;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: 1px solid #e9ecef;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.info-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.info-card-icon {
+font-size: 2.5rem;
+color: #F2C94C;
+margin-bottom: 1rem;
+}
+
+.info-card-title {
+font-weight: bold;
+text-transform: uppercase;
+font-size: 0.9rem;
+letter-spacing: 1px;
+color: #6c757d;
+margin-bottom: 0.75rem;
+}
+
+.info-card-text {
+font-size: 1rem;
+color: #212529;
+text-decoration: none;
+display: block;
+margin-bottom: 0.25rem;
+line-height: 1.5;
+}
+
+.info-card a.info-card-text:hover {
+color: #0056b3;
+text-decoration: underline;
+}
+
+/* --- Responsive / Móvil --- */
+@media (max-width: 768px) {
+.titleheader { top: 50%; }
+
+.titleheader .display-1 {
+  font-size: clamp(28px, 8.5vw, 56px);
+  line-height: 1.1;
+}
+.titleheader h3 {
+  font-size: clamp(16px, 4.3vw, 22px);
+  line-height: 1.3;
+}
+
+.info-card-container .row { --bs-gutter-y: 2.25rem; }
+
+.info-card {
+  margin-bottom: 8px;
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+
+.info-card-container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+}
+
+@media (max-width: 576px) {
+.info-card-container .row { --bs-gutter-y: 2.75rem; }
+.info-card { padding: 1.35rem; }
+}
