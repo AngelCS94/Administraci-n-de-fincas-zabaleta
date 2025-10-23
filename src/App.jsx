@@ -1,14 +1,15 @@
-import './styles/App.css'
-import Home from './pages/Home'
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import './styles/App.css';
+import Home from './js/pages/home.jsx';
+import injectContext from './js/store/appContext.jsx';
 
 function App() {
-
-
-  return (
-    <>
-      <Home/>
-    </>
-  )
+return (
+  <BrowserRouter>
+    <Home />
+  </BrowserRouter>
+);
 }
 
-export default App
+export default injectContext(App);
