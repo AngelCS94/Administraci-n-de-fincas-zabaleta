@@ -1,54 +1,45 @@
-.navbar {
-  position: fixed;
+/* ============================
+   NAVBAR ESTILOS PERSONALIZADOS
+   ============================ */
+
+/* NO usamos .navbar para no pisar Bootstrap */
+.custom-navbar {
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #282c34;
-  color: #ffffff;
-  padding: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1050; /* por encima de todo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.navbar-content {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
-.navbar-title {
-  margin: 0;
-  font-size: 1.8em;
-}
-
-.navbar-subtitle {
-  font-size: 0.9em;
-  margin-top: 100px;
-}
-
-.navbar-link {
-  position: absolute;
-  right: 50px;
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar-link:hover {
-  color: #61dafb;
-  text-decoration: solid;
-}
-
-.navbar-image {
+/* Ajusta el logo */
+.navbar-logo {
+  width: 50px;
   height: 50px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-top: 20px;
+  object-fit: contain;
 }
 
+/* Links */
+.nav-link {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #61dafb !important;
+}
+
+/* Estilo de los botones que actúan como links */
+.nav-link.btn-link {
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* En pantallas pequeñas puedes ocultar algo si quieres */
 @media (max-width: 768px) {
   .navbar-link {
     display: none;

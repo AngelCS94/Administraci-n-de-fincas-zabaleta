@@ -1,11 +1,13 @@
+/* src/styles/App.css */
+
 #root {
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 1rem;
+  /* Que ocupe todo el ancho de la pantalla, sin centrarse ni tener padding */
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   text-align: left;
   font-family: 'Roboto', 'Poppins', Arial, sans-serif;
-  
-  /* Asegura que el fondo sea blanco y el texto negro */
   color: #000000;
   background-color: #ffffff;
 }
@@ -67,6 +69,7 @@ button {
   color: #ffffff;
   font-weight: 600;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
 }
 
 button:hover {

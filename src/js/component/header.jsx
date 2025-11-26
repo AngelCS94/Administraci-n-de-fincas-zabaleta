@@ -8,7 +8,7 @@ const scrollToSection = (id) => {
 };
 
 return (
-  <div>
+  <>
     {/* HERO */}
     <div className="header">
       <img
@@ -30,57 +30,61 @@ return (
     </div>
 
     {/* TARJETAS */}
-    <div className="info-card-container container">
-      <div className="row gy-4">
-        {/* Instagram */}
-        <div className="col-lg-3 col-md-6 col-12">
-          <div className="info-card h-100">
-            <i className="fa-brands fa-instagram info-card-icon"></i>
-            <h5 className="info-card-title">INSTAGRAM</h5>
-            <a
-              href="https://instagram.com/tu_usuario"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="info-card-text"
-            >
-              @tu_usuario
-            </a>
-          </div>
-        </div>
+    <div className="info-card-container">
+      <div className="info-card-wrapper">
+        <div className="container-fluid">
+          <div className="row gy-4">
+            {/* Instagram */}
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="info-card h-100">
+                <i className="fa-brands fa-instagram info-card-icon"></i>
+                <h5 className="info-card-title">INSTAGRAM</h5>
+                <a
+                  href="https://instagram.com/tu_usuario"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="info-card-text"
+                >
+                  @tu_usuario
+                </a>
+              </div>
+            </div>
 
-        {/* Teléfono */}
-        <div className="col-lg-3 col-md-6 col-12">
-          <div className="info-card h-100">
-            <i className="fa-solid fa-phone-volume info-card-icon"></i>
-            <h5 className="info-card-title">TELÉFONO</h5>
-            <a href="tel:+34606666666" className="info-card-text">+34 606-66-66-66</a>
-            <a href="tel:+34966666666" className="info-card-text">+34 966-66-66-66</a>
-          </div>
-        </div>
+            {/* Teléfono */}
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="info-card h-100">
+                <i className="fa-solid fa-phone-volume info-card-icon"></i>
+                <h5 className="info-card-title">TELÉFONO</h5>
+                <a href="tel:+34606666666" className="info-card-text">+34 606-66-66-66</a>
+                <a href="tel:+34966666666" className="info-card-text">+34 966-66-66-66</a>
+              </div>
+            </div>
 
-        {/* Horario */}
-        <div className="col-lg-3 col-md-6 col-12">
-          <div className="info-card h-100">
-            <i className="fa-solid fa-clock info-card-icon"></i>
-            <h5 className="info-card-title">HORARIO</h5>
-            <p className="info-card-text">Lunes a Sábado: 9am - 8pm</p>
-            <p className="info-card-text">Domingo: 9am - 6pm</p>
-          </div>
-        </div>
+            {/* Horario */}
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="info-card h-100">
+                <i className="fa-solid fa-clock info-card-icon"></i>
+                <h5 className="info-card-title">HORARIO</h5>
+                <p className="info-card-text">Lunes a Sábado: 9am - 8pm</p>
+                <p className="info-card-text">Domingo: 9am - 6pm</p>
+              </div>
+            </div>
 
-        {/* Email */}
-        <div className="col-lg-3 col-md-6 col-12">
-          <div className="info-card h-100">
-            <i className="fa-solid fa-envelope info-card-icon"></i>
-            <h5 className="info-card-title">EMAIL</h5>
-            <a href="mailto:contacto@fincaszabaleta.com" className="info-card-text">
-              contacto@fincaszabaleta.com
-            </a>
+            {/* Email */}
+            <div className="col-lg-3 col-md-6 col-12">
+              <div className="info-card h-100">
+                <i className="fa-solid fa-envelope info-card-icon"></i>
+                <h5 className="info-card-title">EMAIL</h5>
+                <a href="mailto:contacto@fincaszabaleta.com" className="info-card-text">
+                  contacto@fincaszabaleta.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </>
 );
 };
 
