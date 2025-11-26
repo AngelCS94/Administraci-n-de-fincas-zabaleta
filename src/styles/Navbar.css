@@ -2,44 +2,76 @@
    NAVBAR ESTILOS PERSONALIZADOS
    ============================ */
 
-/* NO usamos .navbar para no pisar Bootstrap */
+/* Contenedor general del navbar */
 .custom-navbar {
-  position: fixed !important;
+  position: relative;            /* 👈 ANTES: fixed !important */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1050; /* por encima de todo */
+  z-index: 1050;
+  background-color: #1a1a1a !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
-/* Ajusta el logo */
+/* ============================
+   LOGO
+   ============================ */
+
 .navbar-logo {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
+  height: 42px;          /* ← AJUSTA AQUÍ EL TAMAÑO DEL LOGO */
+  width: auto;           /* mantiene proporción */
+  object-fit: contain;   /* evita deformaciones */
+  margin-right: 10px;
+  border-radius: 4px;    /* opcional, queda elegante */
 }
 
-/* Links */
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+  .navbar-logo {
+    height: 34px;        /* logo más pequeño en móvil */
+  }
+}
+
+/* ============================
+   LINKS
+   ============================ */
+
 .nav-link {
   cursor: pointer;
   font-weight: 500;
+  color: #ffffff !important;
   transition: color 0.25s ease;
 }
 
 .nav-link:hover {
-  color: #61dafb !important;
+  color: #f2c94c !important;
 }
 
-/* Estilo de los botones que actúan como links */
+/* Botones del menú móvil */
 .nav-link.btn-link {
-  color: #fff;
+  color: #fff !important;
   padding-left: 0;
   padding-right: 0;
 }
 
-/* En pantallas pequeñas puedes ocultar algo si quieres */
+/* ============================
+   BOTÓN HAMBURGUESA
+   ============================ */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
 @media (max-width: 768px) {
   .navbar-link {
     display: none;
