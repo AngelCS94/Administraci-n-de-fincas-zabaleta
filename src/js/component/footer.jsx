@@ -3,13 +3,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/footer.css";
 
 export const Footer = ({
+  // Si tu app scrollea en un contenedor, pásalo aquí. Si no, window.
   scrollContainerSelector = null,
-  threshold = 80
+  threshold = 80, // píxeles antes del final para mostrar
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const container = scrollContainerSelector ? document.querySelector(scrollContainerSelector) : null;
+    const container = scrollContainerSelector
+      ? document.querySelector(scrollContainerSelector)
+      : null;
     const scroller = document.scrollingElement || document.documentElement;
     const target = container || window;
 
@@ -18,13 +21,13 @@ export const Footer = ({
         return {
           st: container.scrollTop,
           vh: container.clientHeight,
-          sh: container.scrollHeight
+          sh: container.scrollHeight,
         };
       }
       return {
         st: scroller.scrollTop,
         vh: window.innerHeight,
-        sh: scroller.scrollHeight
+        sh: scroller.scrollHeight,
       };
     };
 
@@ -51,25 +54,57 @@ export const Footer = ({
   }, [isVisible]);
 
   return (
-    <footer className={`footer ${isVisible ? "show" : ""}`} aria-hidden={!isVisible}>
+    <footer
+      className={`footer ${isVisible ? "show" : ""}`}
+      aria-hidden={!isVisible}
+    >
       <nav className="navbar bg-dark">
-        <div className="container-fluid footer-row">
+        <div className="container-fluid footer-inner">
+          {/* IZQUIERDA: texto + logo CAF pegado */}
+          <div className="footer-left">
+            <p className="text ms-1 mt-1 mb-1">
+              <i className="bi bi-c-circle"></i>{" "}
+              Administración de Fincas Zabaleta 2025
+            </p>
 
-          {/* IZQUIERDA */}
-          <span className="footer-left text">
-            <i className="bi bi-c-circle"></i> Administración de Fincas Zabaleta 2025
-          </span>
-
-          {/* CENTRO - ICONOS */}
-          <div className="footer-icons">
-            <a href="#" aria-label="WhatsApp"><i className="bi bi-whatsapp"></i></a>
-            <a href="#" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i className="bi bi-instagram"></i></a>
+            <img
+              src="/logo-caf.png"
+              alt="CAF Madrid"
+              className="caf-footer-logo"
+            />
           </div>
 
-          {/* DERECHA - FIRMA */}
-          <span className="acs-signature">Diseño web · ACS</span>
+          {/* CENTRO: iconos RRSS */}
+          <div className="footer-center">
+            <div className="icon">
+              <a
+                href="https://wa.me/34666666666"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <i className="bi bi-whatsapp text me-3"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/4geeksacademy"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i className="bi bi-facebook text me-3"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/4geeksacademy/"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i className="bi bi-instagram text me-0"></i>
+              </a>
+            </div>
+          </div>
 
+          {/* DERECHA: firma */}
+          <small className="signature me-2">
+            Diseño web · <span>ACS</span>
+          </small>
         </div>
       </nav>
     </footer>

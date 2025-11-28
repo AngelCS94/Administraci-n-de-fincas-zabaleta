@@ -1,172 +1,208 @@
 /* --- HERO --- */
 .header {
-position: relative;
-height: 100vh;
-width: 100vw;
-overflow: hidden;
-margin: 0;
-padding: 0;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .img-fluid-header {
-position: absolute;
-inset: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: 0;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .titleheader {
-position: absolute;
-top: 45%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: white;
-z-index: 1;
-width: 90%;
-max-width: 1400px;
-padding: 0 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  width: 90%;
+  max-width: 1400px;
+  padding: 0 20px;
 }
 
 .titleheader h1,
 .titleheader h3 {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Tamaño base (móvil / tablet) */
 .titleheader button {
-margin-top: 20px;
-padding: 10px 20px;
-font-size: 1rem;
-background-color: #F2C94C;
-font-weight: 800;
-border: none;
-cursor: pointer;
-border-radius: 8px;
-transition: background-color 0.3s ease;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f2c94c;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .titleheader button:hover {
-background-color: #eab308;
+  background-color: #eab308;
+}
+
+/* Logo CAF en el hero */
+.caf-hero-badge {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.caf-hero-logo {
+  max-height: 44px; /* tamaño pequeño y elegante */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+  opacity: 0.95;
 }
 
 /* --- TARJETAS --- */
 .info-card-container {
-position: relative;
-margin-top: -100px;
-z-index: 2;
-margin-bottom: 0;
-width: 100%;
-margin-left: 0;
-margin-right: 0;
-padding: 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  padding: clamp(32px, 5vw, 56px) 0 clamp(28px, 4vw, 48px);
+  background-color: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 /* Wrapper para centrar el contenido de las tarjetas */
 .info-card-wrapper {
-max-width: 1600px;
-margin: 0 auto;
-padding: 0 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .info-card {
-background-color: #ffffff;
-border-radius: 12px;
-padding: 1.5rem;
-text-align: center;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-border: 1px solid #e9ecef;
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .info-card:hover {
-transform: translateY(-8px);
-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
 .info-card-icon {
-font-size: 2.5rem;
-color: #F2C94C;
-margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #f2c94c;
+  margin-bottom: 1rem;
 }
 
 .info-card-title {
-font-weight: bold;
-text-transform: uppercase;
-font-size: 0.9rem;
-letter-spacing: 1px;
-color: #6c757d;
-margin-bottom: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #6c757d;
+  margin-bottom: 0.75rem;
 }
 
 .info-card-text {
-font-size: 1rem;
-color: #212529;
-text-decoration: none;
-display: block;
-margin-bottom: 0.25rem;
-line-height: 1.5;
+  font-size: 1rem;
+  color: #212529;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
 }
 
 .info-card a.info-card-text:hover {
-color: #0056b3;
-text-decoration: underline;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-.titleheader { 
-  top: 50%; 
-  width: 95%;
+  .titleheader {
+    top: 50%;
+    width: 95%;
+  }
+
+  .titleheader .display-1 {
+    font-size: clamp(28px, 8.5vw, 56px);
+    line-height: 1.1;
+  }
+
+  .titleheader h3 {
+    font-size: clamp(16px, 4.3vw, 22px);
+    line-height: 1.3;
+  }
+
+  .caf-hero-logo {
+    max-height: 36px;
+  }
+
+  .info-card-wrapper {
+    padding: 0 1rem;
+  }
+
+  .info-card-container .row {
+    --bs-gutter-y: 2.25rem;
+  }
+
+  .info-card {
+    margin-bottom: 8px;
+    padding: 1.4rem;
+  }
 }
 
-.titleheader .display-1 {
-  font-size: clamp(28px, 8.5vw, 56px);
-  line-height: 1.1;
-}
+/* 💻 Desktop: botón más grande y con más presencia */
+@media (min-width: 992px) {
+  .titleheader button {
+    padding: 14px 36px;
+    font-size: 1.15rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  }
 
-.titleheader h3 {
-  font-size: clamp(16px, 4.3vw, 22px);
-  line-height: 1.3;
-}
-
-.info-card-wrapper {
-  padding: 0 1rem;
-}
-
-.info-card-container .row { 
-  --bs-gutter-y: 2.25rem; 
-}
-
-.info-card {
-  margin-bottom: 8px;
-  padding: 1.4rem;
-}
+  .titleheader button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: 1920px) {
-.info-card-wrapper {
-  max-width: 1800px;
-  padding: 0 3rem;
-}
+  .info-card-wrapper {
+    max-width: 1800px;
+    padding: 0 3rem;
+  }
 
-.titleheader {
-  max-width: 1600px;
-}
+  .titleheader {
+    max-width: 1600px;
+  }
 }
 
 @media (min-width: 2560px) {
-.info-card-wrapper {
-  max-width: 2200px;
-  padding: 0 4rem;
-}
+  .info-card-wrapper {
+    max-width: 2200px;
+    padding: 0 4rem;
+  }
 
-.titleheader {
-  max-width: 2000px;
-}
+  .titleheader {
+    max-width: 2000px;
+  }
 }
