@@ -45,18 +45,17 @@ const Header = () => {
         <div className="info-card-wrapper">
           <div className="container-fluid">
             <div className="row gy-4">
-              {/* Instagram */}
+
+              {/* EMAIL - AHORA PRIMERO */}
               <div className="col-lg-3 col-md-6 col-12">
                 <div className="info-card h-100">
-                  <i className="fa-brands fa-instagram info-card-icon"></i>
-                  <h5 className="info-card-title">INSTAGRAM</h5>
+                  <i className="fa-solid fa-envelope info-card-icon"></i>
+                  <h5 className="info-card-title">EMAIL</h5>
                   <a
-                    href="https://instagram.com/admfincaszabaleta"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:info@admzabaleta.com"
                     className="info-card-text"
                   >
-                    @admfincaszabaleta
+                    info@admzabaleta.com
                   </a>
                 </div>
               </div>
@@ -77,24 +76,29 @@ const Header = () => {
                 <div className="info-card h-100">
                   <i className="fa-solid fa-clock info-card-icon"></i>
                   <h5 className="info-card-title">HORARIO</h5>
-                  <p className="info-card-text">Lunes a Jueves: 10:00 - 14:00 / 16:00 - 18:00</p>
+                  <p className="info-card-text">
+                    Lunes a Jueves: 10:00 - 14:00 / 16:00 - 18:00
+                  </p>
                   <p className="info-card-text">Viernes: 9:00 - 14:00</p>
                 </div>
               </div>
 
-              {/* Email */}
+              {/* Instagram - AHORA ÚLTIMO */}
               <div className="col-lg-3 col-md-6 col-12">
                 <div className="info-card h-100">
-                  <i className="fa-solid fa-envelope info-card-icon"></i>
-                  <h5 className="info-card-title">EMAIL</h5>
+                  <i className="fa-brands fa-instagram info-card-icon"></i>
+                  <h5 className="info-card-title">INSTAGRAM</h5>
                   <a
-                    href="mailto:info@admzabaleta.com"
+                    href="https://instagram.com/admfincaszabaleta"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="info-card-text"
                   >
-                    info@admzabaleta.com
+                    @admfincaszabaleta
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@
 
 .titleheader {
   position: absolute;
-  top: 45%;
+  top: 45%; /* ALTURA DESKTOP */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -36,7 +36,7 @@
   margin-right: auto;
 }
 
-/* Tamaño base (móvil / tablet) */
+/* Botón base (móvil/tablet) */
 .titleheader button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -46,8 +46,7 @@
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.15s ease,
-    box-shadow 0.15s ease;
+  transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .titleheader button:hover {
@@ -62,7 +61,7 @@
 }
 
 .caf-hero-logo {
-  max-height: 44px; /* tamaño pequeño y elegante */
+  max-height: 44px; 
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
@@ -81,7 +80,6 @@
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* Wrapper para centrar el contenido de las tarjetas */
 .info-card-wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -138,7 +136,7 @@
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .titleheader {
-    top: 50%;
+    top: 42%;   /* Ajuste para subir el hero en MÓVIL */
     width: 95%;
   }
 
@@ -170,7 +168,7 @@
   }
 }
 
-/* 💻 Desktop: botón más grande y con más presencia */
+/* Desktop: botón más grande */
 @media (min-width: 992px) {
   .titleheader button {
     padding: 14px 36px;
