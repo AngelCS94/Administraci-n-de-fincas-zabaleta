@@ -46,7 +46,7 @@ const Header = () => {
           <div className="container-fluid">
             <div className="row gy-4">
 
-              {/* EMAIL - AHORA PRIMERO */}
+              {/* EMAIL - */}
               <div className="col-lg-3 col-md-6 col-12">
                 <div className="info-card h-100">
                   <i className="fa-solid fa-envelope info-card-icon"></i>
